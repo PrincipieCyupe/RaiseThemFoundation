@@ -79,33 +79,31 @@ const StoriesOfImpact = () => {
       <main>
         {/* ─── Hero ─── */}
         <section
-          className="relative min-h-[90vh] flex items-center mt-16 md:mt-20"
+          className="relative min-h-[50vh] flex items-center justify-center mt-16 md:mt-20"
           style={{ backgroundColor: "#1C3548" }}
           aria-label="Stories of impact hero"
         >
-          <div className="text-on-overlay container-max px-4 sm:px-6 lg:px-8 py-20 md:py-32">
-            <div className="max-w-2xl">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold leading-tight mb-6">
-                Stories of{" "}
-                <span style={{ color: "#B08D57" }}>Impact</span>
-              </h1>
-              <p className="text-lg md:text-xl text-white/80 mb-8 max-w-lg leading-relaxed">
-                Since April 2024, Raise Them Foundation has guided several refugee
-                students through scholarship applications and secured their
-                placements at leading institutions across Africa.
-              </p>
-              <Button
-                className="px-8 py-3 text-base font-semibold transition-all duration-300 hover:scale-105"
-                style={{ backgroundColor: "#FFFFFF", color: "#1C3548" }}
-                onClick={() =>
-                  document
-                    .getElementById("student-stories")
-                    ?.scrollIntoView({ behavior: "smooth" })
-                }
-              >
-                Read Their Stories
-              </Button>
-            </div>
+          <div className="text-on-overlay text-center px-4">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold mb-4">
+              Stories of{" "}
+              <span style={{ color: "#B08D57" }}>Impact</span>
+            </h1>
+            <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-6">
+              Since April 2024, we have guided seven refugee students through
+              scholarship applications and secured their placements at leading
+              institutions across Africa.
+            </p>
+            <Button
+              className="px-8 py-3 text-base font-semibold transition-all duration-300 hover:scale-105"
+              style={{ backgroundColor: "#FFFFFF", color: "#1C3548" }}
+              onClick={() =>
+                document
+                  .getElementById("student-stories")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+            >
+              Read Their Stories
+            </Button>
           </div>
         </section>
 

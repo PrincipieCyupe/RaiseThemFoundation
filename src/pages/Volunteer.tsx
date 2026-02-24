@@ -149,35 +149,33 @@ const Volunteer = () => {
       <Header />
       <main>
         {/* ─── Hero ─── */}
-        <section className="relative min-h-[90vh] flex items-center mt-16 md:mt-20" style={{ backgroundColor: "#1C3548" }} aria-label="Volunteer hero">
-          <div className="text-on-overlay container-max px-4 sm:px-6 lg:px-8 py-20 md:py-32">
-            <div className="max-w-2xl">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold leading-tight mb-6">
-                Give us a <span style={{ color: "#B08D57" }}>hand</span>
-              </h1>
-              <p className="text-lg md:text-xl text-white/80 mb-8 max-w-lg leading-relaxed">
-                Join us in empowering refugee youth through mentorship, education, and community support.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <Button
-                  className="px-8 py-3 text-base font-semibold transition-all duration-300 hover:scale-105"
-                  style={{ backgroundColor: "#FFFFFF", color: "#1C3548" }}
-                  onClick={() =>
-                    document.getElementById("volunteer-form")?.scrollIntoView({ behavior: "smooth" })
-                  }
-                >
-                  Become a Volunteer
-                </Button>
-                <Button
-                  className="px-8 py-3 text-base font-semibold transition-all duration-300 hover:scale-105 hover:opacity-90"
-                  style={{ backgroundColor: "#FFFFFF", color: "#1C3548" }}
-                  onClick={() =>
-                    document.getElementById("opportunities")?.scrollIntoView({ behavior: "smooth" })
-                  }
-                >
-                  Explore Opportunities
-                </Button>
-              </div>
+        <section className="relative min-h-[50vh] flex items-center justify-center mt-16 md:mt-20" style={{ backgroundColor: "#1C3548" }} aria-label="Volunteer hero">
+          <div className="text-on-overlay text-center px-4">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold mb-4">
+              Give us a <span style={{ color: "#B08D57" }}>hand</span>
+            </h1>
+            <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-6">
+              Join us in empowering refugee youth through mentorship, education, and community support.
+            </p>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <Button
+                className="px-8 py-3 text-base font-semibold transition-all duration-300 hover:scale-105"
+                style={{ backgroundColor: "#FFFFFF", color: "#1C3548" }}
+                onClick={() =>
+                  document.getElementById("volunteer-form")?.scrollIntoView({ behavior: "smooth" })
+                }
+              >
+                Become a Volunteer
+              </Button>
+              <Button
+                className="px-8 py-3 text-base font-semibold transition-all duration-300 hover:scale-105 hover:opacity-90"
+                style={{ backgroundColor: "#FFFFFF", color: "#1C3548" }}
+                onClick={() =>
+                  document.getElementById("opportunities")?.scrollIntoView({ behavior: "smooth" })
+                }
+              >
+                Explore Opportunities
+              </Button>
             </div>
           </div>
         </section>
@@ -287,7 +285,7 @@ const Volunteer = () => {
 
               <form
                 onSubmit={handleSubmit}
-                className="bg-card/95 backdrop-blur-sm rounded-lg border border-border p-8 md:p-10 shadow-xl space-y-6"
+                className="bg-card/95 backdrop-blur-sm rounded-lg border border-border p-8 md:p-10 shadow-xl space-y-6 text-foreground"
               >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
