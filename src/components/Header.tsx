@@ -11,7 +11,7 @@ interface NavItem {
 
 const navLinks: NavItem[] = [
   { label: "Home", to: "/" },
-  { label: "Stories of Impact", to: "/stories" },
+  { label: "Stories of Impact", to: "/stories-of-impact" },
   {
     label: "Our Organization",
     to: "/organization",
