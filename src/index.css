@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   :root {
@@ -45,8 +45,12 @@
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
 
-    --font-heading: 'Playfair Display', serif;
-    --font-body: 'Inter', sans-serif;
+    /* --font-heading: 'Playfair Display', serif; */
+    /* --font-heading: 'Inter', sans-serif;
+    --font-body: 'Inter', sans-serif; */
+
+    --font-heading: 'Source Sans 3', sans-serif;
+    --font-body: 'Source Sans 3', sans-serif;
   }
 
   .dark {
@@ -111,4 +115,18 @@
   .text-on-overlay {
     @apply relative z-10 text-white;
   }
+}
+
+/* Forcing all to use this font style */
+
+:root {
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+body {
+  font-family: 'Source Sans 3', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Source Sans 3', sans-serif !important;
 }
