@@ -90,7 +90,7 @@ const StoriesOfImpact = () => {
                 <span style={{ color: "#B08D57" }}>Impact</span>
               </h1>
               <p className="text-lg md:text-xl text-white/80 mb-8 max-w-lg leading-relaxed">
-                Since April 2024, Raise Them Foundation has guided seven refugee
+                Since April 2024, Raise Them Foundation has guided several refugee
                 students through scholarship applications and secured their
                 placements at leading institutions across Africa.
               </p>
