@@ -165,6 +165,7 @@ const galleryItems: GalleryItem[] = [
     title: "Meeting Someone Who Inspired Us to Continue",
     description: "Members of the Raise Them Foundation team meeting a mentor who greatly inspired our mission and encouraged us to continue our work supporting refugee youth. His words and perspective reinforced our commitment to education, empowerment, and community impact.",
     date: "2025",
+    location: "Kigali City",
     category: "Partnerships",
     section: "Inspiration & Partnerships",
   },
