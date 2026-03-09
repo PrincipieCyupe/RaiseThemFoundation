@@ -18,6 +18,7 @@ const navLinks: NavItem[] = [
     children: [
       { label: "About Us", to: "/about" },
       { label: "What We Do", to: "/what-we-do" },
+      { label: "Gallery", to: "/gallery" },
     ],
   },
   { label: "News", to: "/news" },
@@ -133,10 +134,17 @@ const Header = () => {
           )}
 
           <Button
+            asChild
             className="font-semibold px-6 hover:opacity-90"
             style={{ backgroundColor: "#1C3548", color: "rgba(229, 231, 235, 0.7)" }}
           >
-            Donate
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdQAzkN4lSlmq_2AbdMyn3OCkRUCmZP3P3f_eV6XCd4DQ4Gqw/viewform?usp=header"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Donate
+            </a>
           </Button>
         </nav>
 
@@ -208,10 +216,17 @@ const Header = () => {
           )}
 
           <Button
+            asChild
             className="w-full mt-3 font-semibold hover:opacity-90"
             style={{ backgroundColor: "#1C3548", color: "rgba(229, 231, 235, 0.7)" }}
           >
-            Donate
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdQAzkN4lSlmq_2AbdMyn3OCkRUCmZP3P3f_eV6XCd4DQ4Gqw/viewform?usp=header"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Donate
+            </a>
           </Button>
         </nav>
       )}
