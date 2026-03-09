@@ -111,7 +111,7 @@ const Header = () => {
                         to={child.to}
                         reloadDocument
                         className="block px-4 py-2.5 text-sm font-medium transition-colors hover:bg-black/5"
-                        style={{ color: "#1C3548" }}
+                        style={{ color: location.pathname === child.to ? "#967B5A" : "#1C3548" }}
                         onClick={() => setOpenDropdown(null)}
                       >
                         {child.label}
@@ -126,7 +126,7 @@ const Header = () => {
                 to={l.to}
                 reloadDocument
                 className="text-sm font-medium transition-colors hover:opacity-70"
-                style={{ color: "#1C3548" }}
+                style={{ color: location.pathname === l.to ? "#967B5A" : "#1C3548" }}
               >
                 {l.label}
               </Link>
@@ -189,7 +189,7 @@ const Header = () => {
                         to={child.to}
                         reloadDocument
                         className="block py-2.5 text-sm font-medium transition-colors hover:opacity-70"
-                        style={{ color: "#1C3548" }}
+                        style={{ color: location.pathname === child.to ? "#967B5A" : "#1C3548" }}
                         onClick={() => {
                           setMobileOpen(false);
                           setMobileExpanded(null);
@@ -207,7 +207,7 @@ const Header = () => {
                 to={l.to}
                 reloadDocument
                 className="block py-3 text-sm font-medium transition-colors hover:opacity-70"
-                style={{ color: "#1C3548" }}
+                style={{ color: location.pathname === l.to ? "#967B5A" : "#1C3548" }}
                 onClick={() => setMobileOpen(false)}
               >
                 {l.label}
