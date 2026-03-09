@@ -10,6 +10,7 @@ import About from "./pages/About";
 import WhatWeDo from "./pages/WhatWeDo";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
+import DocumentTitle from "./components/DocumentTitle";
 import Gallery from "./pages/Gallery";
 
 const queryClient = new QueryClient();
@@ -20,6 +21,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <DocumentTitle />
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />

@@ -18,7 +18,6 @@ const navLinks: NavItem[] = [
     children: [
       { label: "About Us", to: "/about" },
       { label: "What We Do", to: "/what-we-do" },
-      { label: "Gallery", to: "/gallery" },
     ],
   },
   { label: "News", to: "/news" },
@@ -31,6 +30,7 @@ const navLinks: NavItem[] = [
     ],
   },
   { label: "Volunteer", to: "/volunteer" },
+  { label: "Gallery", to: "/gallery" },
 ];
 
 const Header = () => {
