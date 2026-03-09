@@ -105,36 +105,30 @@ const Header = () => {
                     style={{ backgroundColor: "rgba(229, 231, 235, 0.98)", borderColor: "rgba(28,53,72,0.1)" }}
                   >
                     {l.children.map((child) => (
-                      <NavLink
+                      <Link
                         key={child.label}
                         to={child.to}
-                        className={({ isActive }) =>
-                          `block px-4 py-2.5 text-sm font-medium transition-colors hover:bg-black/5 ${
-                            isActive ? "bg-black/5" : ""
-                          }`
-                        }
-                        style={({ isActive }) => ({
-                          color: isActive ? "#967B5A" : "#1C3548",
-                        })}
+                        reloadDocument
+                        className="block px-4 py-2.5 text-sm font-medium transition-colors hover:bg-black/5"
+                        style={{ color: "#1C3548" }}
                         onClick={() => setOpenDropdown(null)}
                       >
                         {child.label}
-                      </NavLink>
+                      </Link>
                     ))}
                   </div>
                 )}
               </div>
             ) : (
-              <NavLink
+              <Link
                 key={l.label}
                 to={l.to}
+                reloadDocument
                 className="text-sm font-medium transition-colors hover:opacity-70"
-                style={({ isActive }) => ({
-                  color: isActive ? "#967B5A" : "#1C3548",
-                })}
+                style={{ color: "#1C3548" }}
               >
                 {l.label}
-              </NavLink>
+              </Link>
             )
           )}
 
@@ -182,36 +176,34 @@ const Header = () => {
                 {mobileExpanded === l.label && (
                   <div className="pl-4 pb-2">
                     {l.children.map((child) => (
-                      <NavLink
+                      <Link
                         key={child.label}
                         to={child.to}
+                        reloadDocument
                         className="block py-2.5 text-sm font-medium transition-colors hover:opacity-70"
-                        style={({ isActive }) => ({
-                          color: isActive ? "#967B5A" : "#1C3548",
-                        })}
+                        style={{ color: "#1C3548" }}
                         onClick={() => {
                           setMobileOpen(false);
                           setMobileExpanded(null);
                         }}
                       >
                         {child.label}
-                      </NavLink>
+                      </Link>
                     ))}
                   </div>
                 )}
               </div>
             ) : (
-              <NavLink
+              <Link
                 key={l.label}
                 to={l.to}
+                reloadDocument
                 className="block py-3 text-sm font-medium transition-colors hover:opacity-70"
-                style={({ isActive }) => ({
-                  color: isActive ? "#967B5A" : "#1C3548",
-                })}
+                style={{ color: "#1C3548" }}
                 onClick={() => setMobileOpen(false)}
               >
                 {l.label}
-              </NavLink>
+              </Link>
             )
           )}
 
