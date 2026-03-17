@@ -1,9 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 
 const counters = [
-  { end: 50, suffix: "+", label: "High School Students" },
-  { end: 10, suffix: "+", label: "Higher Education" },
-  { end: 2000, suffix: "+", label: "Funds Raised", prefix: "$" },
+  { end: 50, suffix: "+", label: "High School Students", prefix: "" },
+  { end: 10, suffix: "+", label: "Higher Education", prefix: "" },
 ];
 
 function useCountUp(end: number, trigger: boolean, duration = 2000) {
